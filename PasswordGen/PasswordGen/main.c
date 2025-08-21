@@ -135,7 +135,7 @@ void vPass(const char* pass) {
 	else { SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY); printf("[-] Missing special characters (!@#$..)\n"); }
 
 	printf("\n--- Verdict ---\n");
-	if (score >= 5) { // Requires good length and most character types
+	if (score >= 5) {
 		SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
 		printf("Strength: STRONG\n");
 	}
@@ -302,4 +302,5 @@ int main() {
 			break;
 		}
 	}
+
 }
